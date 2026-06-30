@@ -1,7 +1,8 @@
 # src/dagster_essentials/defs/assets/trips.py
+import dagster as dg
 from dagster_duckdb import DuckDBResource
 from dagster_essentials.defs.assets import constants
-import dagster as dg
+#from dagster_essentials.defs.partitions import monthly_partition
 
 @dg.asset(
     deps=["taxi_trips_file"],
